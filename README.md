@@ -26,7 +26,7 @@
 
 ## Setup and Installation Requirements
 
-* You can find the github repository [here]()
+* You can find the github repository [here](https://github.com/Chase-Stokes/tap-room)
 * In your git terminal navigate to where you would like to store the project
 * Run the command `git clone {github repository link goes here}`
 * Open the cloned project in VS Code
