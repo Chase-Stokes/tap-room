@@ -8,7 +8,8 @@ function Keg(props) {
             <h4>{props.name}</h4>
             <p>{props.brand}</p>
             <p>{props.price}</p>
-            <p>{props.alcoholContent}%</p>
+            <p>{props.alcoholContent}</p>
+            <p>{props.pints}</p>
         </div>
         </>
     )
@@ -19,6 +20,7 @@ Keg.propTypes = {
     brand: PropTypes.string,
     price: PropTypes.string,
     alcoholContent: PropTypes.string,
+    pints: PropTypes.number,
     id: PropTypes.string,
     whenKegClicked: PropTypes.func
 }

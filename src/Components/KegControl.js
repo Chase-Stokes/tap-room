@@ -40,7 +40,45 @@ class KegControl extends React.Component {
     }
 
     handleChangingSelectedKeg = (id) => {
-        
+        const selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
+        this.setState({selectedKeg: selectedKeg})
+    }
+
+    handleDeletingKeg = (id) => {
+        const newMainKegList = this.state.mainKegList.filter(keg => keg.id !== id);
+        this.setState({
+            mainKegList: newMainKegList,
+            selectedKeg: null
+        });
+    }
+
+    handleEditClick = () => {
+        this.setState({editing: true});
+    }
+
+    handleEditingKegInList = (kegToEdit) => {
+        const editedMainKegList = this.state.mainKegList
+        .filter(keg => keg.id !== this.state.selectedKeg.id)
+        .concat(kegToEdit);
+        this.setState({
+            mainKegList: editedMainKegList,
+            editing: false,
+            selectedKeg: null,            
+        });
+    }
+
+    handleDecrementingPints = () => {
+        const pickedKeg = this.state.selectedKeg;
+        const pintsToEdit = {
+            name: pickedKeg.name,
+            brand: pickedKeg.brand,
+            price: pickedKeg.price,
+            alcoholContent: pickedKeg.alcoholContent,
+            pints: pickedKeg.pints -=1,
+            id: pickedKeg.id,
+            key: pickedKeg.id
+        }
+        this.handleChangingSelectedKeg(pintsToEdit.id)
     }
 
     render() {
@@ -56,7 +94,8 @@ class KegControl extends React.Component {
             currentlyVisibleState = <KegDetail 
             keg = {this.state.selectedKeg}
             onClickingDelete = {this.handleDeletingKeg}
-            onClickingEdit = {this.handleEditClick} />
+            onClickingEdit = {this.handleEditClick} 
+            onClickingDecrememt = {this.handleDecrementingPints} />
             
             buttonText= "Return To Keg List";
         } else if (this.state.formVisibleOnPage) {
@@ -80,3 +119,5 @@ class KegControl extends React.Component {
         )
     }
 }
+
+export default KegControl;
