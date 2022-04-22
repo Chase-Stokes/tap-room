@@ -3,6 +3,7 @@ import NewKegForm from "./NewKegForm";
 import KegList from "./KegList";
 import EditKegForm from "./EditKegForm";
 import KegDetail from "./KegDetail";
+import { v4 } from "uuid";
 
 class KegControl extends React.Component {
 
@@ -10,7 +11,10 @@ class KegControl extends React.Component {
         super(props);
         this.state = {
             formVisibleOnPage: false,
-            mainKegList: [],
+            mainKegList: [
+                {name: "Beer", brand: "Beer Brand", price: "200", alcoholContent: "8", pints: 124, id: v4()},
+                {name: "Cider", brand: "Cider Brand", price: "100", alcoholContent: "7", pints: 124, id: v4()}
+            ],
             selectedKeg: null,
             editing: false
         };

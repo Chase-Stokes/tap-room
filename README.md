@@ -1,6 +1,69 @@
-# Getting Started with Create React App
+# Tap Room
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## By: Chase Stokes
+
+`An application to help a user track and manage their kegs in a bar.`
+<hr>
+
+## Technologies Used
+
+* JavaScript
+* React
+* JSX
+* HTML
+* CSS
+* Node
+
+<hr>
+
+## Description
+`Week 16 Epicodus project. A react application designed with CRUD functionality to help the user track and manage kegs in their bar.`
+
+<hr>
+
+![](./week16Chart.png)
+
+
+## Setup and Installation Requirements
+
+* You can find the github repository [here]()
+* In your git terminal navigate to where you would like to store the project
+* Run the command `git clone {github repository link goes here}`
+* Open the cloned project in VS Code
+* In your terminal navigate into the cloned project and run the command `npm install`
+* You can now view the project by running `npm run start` in your terminal
+
+## Known Bugs
+
+* No known bugs
+
+## License - MIT
+
+```
+Copyright (c) 2022 Chase Stokes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+
+
+<hr>
 
 ## Available Scripts
 

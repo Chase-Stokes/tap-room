@@ -10,7 +10,6 @@ function KegList(props){
             <Keg 
             whenKegClicked = { props.onKegSelection }
             name = {keg.name}
-            price = {keg.price}
             id = {keg.id}
             key = {keg.id}/>
             )}
