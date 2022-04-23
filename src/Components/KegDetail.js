@@ -22,7 +22,7 @@ function KegDetail(props){
         <p>{keg.alcoholContent}%</p>
         <p>{keg.pints}</p>
         <button onClick={ props.onClickingEdit }>Update Keg Info</button>
-        <button onClick={ props.onClickingDecrememt }>Decrement Pint</button>
+        <button onClick={ props.onClickingDecrement }>Decrement Pint</button>
         <button onClick={()=> onClickingDelete(keg.id) }>Remove Keg</button>
         </>
     );
@@ -32,7 +32,7 @@ KegDetail.propTypes = {
     keg: PropTypes.object,
     onClickingDelete: PropTypes.func,
     onClickingEdit: PropTypes.func,
-    onClickingDecrememt: PropTypes.func
+    onClickingDecrement: PropTypes.func
 };
 
 export default KegDetail;

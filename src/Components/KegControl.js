@@ -99,7 +99,7 @@ class KegControl extends React.Component {
             keg = {this.state.selectedKeg}
             onClickingDelete = {this.handleDeletingKeg}
             onClickingEdit = {this.handleEditClick} 
-            onClickingDecrememt = {this.handleDecrementingPints} />
+            onClickingDecrement = {this.handleDecrementingPints} />
             
             buttonText= "Return To Keg List";
         } else if (this.state.formVisibleOnPage) {
